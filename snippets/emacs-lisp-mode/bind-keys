@@ -1,0 +1,10 @@
+# name : bind-keys
+# key : bks
+# keybinding : keybinding
+# expand-env : ()
+# contributor : 
+# expand-env : ()
+# --
+(bind-keys :map $1
+  ($0)
+)

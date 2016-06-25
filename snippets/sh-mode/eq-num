@@ -1,0 +1,12 @@
+# name: eq-num
+# key: eq-num
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+if test $1 -eq $2
+then
+
+
+fi 

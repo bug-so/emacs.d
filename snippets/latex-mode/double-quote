@@ -1,0 +1,8 @@
+# name: double-quote
+# key: quote
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+\`\`$1\'\'$0

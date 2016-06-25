@@ -1,0 +1,8 @@
+# name : eclipse-author-name
+# key : eclipse-author-name
+# keybinding : keybinding
+# expand-env : ()
+# contributor : 
+# expand-env : ()
+# --
+-Duser.name=Shin Osaki

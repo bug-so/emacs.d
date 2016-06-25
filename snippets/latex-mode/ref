@@ -1,0 +1,8 @@
+# name: ref
+# key: ref
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+`(check-back-slash-for-latex)`ref{$1}$0

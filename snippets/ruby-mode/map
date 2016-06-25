@@ -1,0 +1,8 @@
+# name: map
+# key: map
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+map{|${1:item}| $2}$0

@@ -1,0 +1,8 @@
+# name : tableref
+# key : tableref
+# keybinding : keybinding
+# expand-env : ()
+# contributor : 
+# expand-env : ()
+# --
+表~\ref{$1}$0

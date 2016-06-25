@@ -1,0 +1,23 @@
+# name: multi-fugures
+# key: multi-fugures
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+\begin{figure}[htb]
+  \begin{minipage}{0.5\textwidth}
+    \begin{center}
+      \includegraphics[width=\textwidth]{figures/${1:fig1}.eps}
+    \end{center}
+    \caption{${2:caption1}}
+    \label{figures/$1}
+  \end{minipage}
+  \begin{minipage}{0.5\textwidth}
+    \begin{center}
+      \includegraphics[width=\textwidth]{figures/${3:fig2}.eps}
+    \end{center}
+    \caption{${5:caption2}}
+    \label{figures/$3}
+  \end{minipage}
+\end{figure}

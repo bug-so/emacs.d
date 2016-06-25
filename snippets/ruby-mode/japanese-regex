@@ -1,0 +1,9 @@
+# name : japanese-regex
+# key : trigger-key
+# keybinding : japanese-regex
+# expand-env : ()
+# contributor : 
+# expand-env : ()
+# key: vars
+# --
+japanese_regex = /\A(?:\p{Hiragana}|\p{Katakana}|[ー－]|[一-龠々])+\z/

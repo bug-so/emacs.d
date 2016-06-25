@@ -1,0 +1,9 @@
+# name : advice deactivate
+# key : advice-deactivate
+# keybinding : keybinding
+# expand-env : ()
+# contributor : 
+# expand-env : ()
+# key: vars
+# --
+(ad-deactivate-regexp ')

@@ -1,0 +1,10 @@
+# name: function
+# key: function
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+$(function(){
+$1
+});$0

@@ -1,0 +1,10 @@
+# name : keysnail-ext
+# key : trigger-key
+# keybinding : keysnail-ext
+# expand-env : ()
+# contributor : 
+# expand-env : ()
+# --
+ext.add("$1", function(){
+  $2
+},"$1",true);

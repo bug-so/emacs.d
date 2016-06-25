@@ -1,0 +1,10 @@
+# name: for
+# key: for
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+for ${1:i} in $2; do
+    ${3:echo} $$1
+done

@@ -1,0 +1,9 @@
+# name: subsection
+# key: subsec
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+`(check-back-slash-for-latex)`subsection{$1}\label{subsec-$2}
+$0

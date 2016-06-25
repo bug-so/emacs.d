@@ -1,0 +1,8 @@
+# name: linestretch
+# key: linestretch
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+\renewcommand{\baselinestretch}{$1}$0

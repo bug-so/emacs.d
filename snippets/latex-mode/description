@@ -1,0 +1,10 @@
+# name: description
+# key: des
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+\begin{description}
+\item[$1] $0
+\end{description}

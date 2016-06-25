@@ -1,0 +1,8 @@
+# name: newcommand
+# key: new
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+\newcommand{\\$1}{$2}$0

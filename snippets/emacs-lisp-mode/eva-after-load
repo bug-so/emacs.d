@@ -1,0 +1,11 @@
+# name: eva-after-load
+# key: e-after
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+(eval-after-load "$1"
+  \'(progn
+     $0
+     ))

@@ -1,0 +1,8 @@
+# name: figref
+# key: figref
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+図~\ref{$1}$0

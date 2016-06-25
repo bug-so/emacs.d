@@ -1,0 +1,11 @@
+# name: threads
+# key: threads
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+thrads << Thread::new do
+  $1
+end
+$0

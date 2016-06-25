@@ -1,0 +1,9 @@
+# name : fread
+# key : trigger-key
+# keybinding : fread
+# expand-env : ()
+# contributor : 
+# expand-env : ()
+# key: vars
+# --
+File.read($1, encode: 'UTF-8')$0

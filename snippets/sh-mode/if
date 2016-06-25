@@ -1,0 +1,10 @@
+# name: if
+# key: if
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+if test ${1:""=""} ; then
+    $0
+fi

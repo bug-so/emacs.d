@@ -1,0 +1,8 @@
+# name: single-quotation
+# key: '
+# keybinding: '
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+\'$1\'$0

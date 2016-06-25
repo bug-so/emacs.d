@@ -1,0 +1,8 @@
+# name: msg
+# key: msg
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+(message "%S" $0)

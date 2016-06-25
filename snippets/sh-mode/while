@@ -1,0 +1,10 @@
+# name: while
+# key: while
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+while read ${1:f}; do
+  ${2:echo} $1
+done;

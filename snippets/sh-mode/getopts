@@ -1,0 +1,14 @@
+# name: getopts
+# key: getopts
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+while getopts ${1:o:} ${2:OPT}
+do 
+    case \$$2 in
+	$1 )
+	    echo "$OPTARG";;
+    esac
+done

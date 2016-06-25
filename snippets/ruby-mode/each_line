@@ -1,0 +1,8 @@
+# name: each_line
+# key: eal
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+each_line{|line| $1}$0

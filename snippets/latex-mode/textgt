@@ -1,0 +1,8 @@
+# name: textgt
+# key: gt
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+`(remove-back-slash-for-latex)`{\textgt $1}$0

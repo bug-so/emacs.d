@@ -1,0 +1,24 @@
+# name: subfigure
+# key: subfigure
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+\begin{figure}[htb]
+  \begin{center}
+    \hspace{1cm}
+    \subfigure[シーケンス図]{
+      \includegraphics[width=0.4\textwidth]{figures/step-sequence.eps}
+      \label{figures/step}
+    } \\%% ~
+    \subfigure[移動回数の記録]{
+      \includegraphics[width=0.4\textwidth]{figures/step.eps}
+      \label{figures/rollback}
+    }
+    \caption{single step execution function for mobile agent}
+    \label{figures/debug-function}
+  \end{center}
+\end{figure}
+
+

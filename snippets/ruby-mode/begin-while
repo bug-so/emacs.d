@@ -1,0 +1,10 @@
+# name: begin while
+# key: bw
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+begin
+  $0
+end while($1)

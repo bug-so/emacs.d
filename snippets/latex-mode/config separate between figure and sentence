@@ -1,0 +1,8 @@
+# name: config separate between figure and sentence on tb
+# key: sep-fig-sentence-tb
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+\setlength\textfloatsep{${1:1}pt}$0

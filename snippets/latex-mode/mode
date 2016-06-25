@@ -1,0 +1,9 @@
+# name: mode
+# key: mode
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+\\$1{$2}
+$0

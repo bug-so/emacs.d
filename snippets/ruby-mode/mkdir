@@ -1,0 +1,8 @@
+# name: mkdir
+# key: mkdir
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+FileUtils.mkdir_p(${1:dirname}) unless FileTest.exist?($1)$0

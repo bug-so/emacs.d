@@ -1,0 +1,8 @@
+# name: textbf
+# key: bf
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+`(remove-back-slash-for-latex)`{\bf $1}$0

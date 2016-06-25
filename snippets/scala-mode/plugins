@@ -1,0 +1,8 @@
+# name: plugins
+# key: plugins
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+addSbtPlugin("org.ensime" % "ensime-sbt-cmd" % "0.1.1")

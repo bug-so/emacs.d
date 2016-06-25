@@ -1,0 +1,8 @@
+# name: vspace
+# key: vspace
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+`(check-back-slash-for-latex)`vspace{$1}$0

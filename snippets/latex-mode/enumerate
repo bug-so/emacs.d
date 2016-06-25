@@ -1,0 +1,10 @@
+# name: enumerate
+# key: enum
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+\begin{enumerate}
+\item $0
+\end{enumerate}

@@ -1,0 +1,8 @@
+# name: label
+# key: label
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+`(check-back-slash-for-latex)`label{$1}$0

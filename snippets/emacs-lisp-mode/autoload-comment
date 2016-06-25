@@ -1,0 +1,8 @@
+# name: autoload-comment
+# key: al-com
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+;;;###autoload

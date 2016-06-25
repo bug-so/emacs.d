@@ -1,0 +1,10 @@
+# name: function
+# key: func
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+${1:func} (){
+  $0
+}

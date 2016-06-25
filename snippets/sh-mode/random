@@ -1,0 +1,8 @@
+# name: random
+# key: rand
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+od -An -N4 -tu4 < /dev/random

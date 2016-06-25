@@ -1,0 +1,8 @@
+# name: println
+# key: syso
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+println($1)

@@ -1,0 +1,9 @@
+# name: section
+# key: sec
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+\section{$1}\label{sec-$2}
+$0

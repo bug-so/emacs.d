@@ -1,0 +1,10 @@
+# name: def
+# key: def
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+def $1
+  $0
+end

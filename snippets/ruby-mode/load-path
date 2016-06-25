@@ -1,0 +1,8 @@
+# name: load-path
+# key: load-path
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+$LOAD_PATH.push('$1')

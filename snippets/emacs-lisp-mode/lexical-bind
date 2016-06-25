@@ -1,0 +1,8 @@
+# name: lexical-bind
+# key: lexical-bind
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+;;; -*- coding: utf-8; lexical-binding: t -*-

@@ -1,0 +1,8 @@
+# name: seq
+# key: seq
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+\`seq ${2:begin} ${3:between} ${4:end}\`

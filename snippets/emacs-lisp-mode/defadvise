@@ -1,0 +1,10 @@
+# name: defadvice
+# key: advice
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+(defadvice ${1:hook-function} (${2:before} ${3:name} ${4:activate})
+  $0
+)

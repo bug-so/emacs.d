@@ -1,0 +1,9 @@
+# name: include subcaption
+# key: inc-subcaption
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+\usepackage{subcaption}
+\captionsetup{compatibility=false}

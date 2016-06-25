@@ -1,0 +1,16 @@
+# name: subcaption
+# key: subcaption
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+\begin{figure*}[htb]
+  \begin{center}
+    \subcaptionbox{自律的な移動 \\ Autonomous migration.\label{figures/problem1}}[.32\linewidth]{\includegraphics[height=.30\textwidth]{figures/problem1.eps}}
+    \subcaptionbox{デバッグ中の移動 \\ Migration on a debugging.\label{figures/problem2}}[.32\linewidth]{\includegraphics[height=.30\textwidth]{figures/problem2.eps}}
+    \subcaptionbox{外部からの影響 \\ Exterior influences.\label{figures/problem3}}[.32\linewidth]{\includegraphics[height=.30\textwidth]{figures/problem3.eps}}
+    \caption{モバイルエージェントシステムのデバッグの問題}\label{figures/problem}
+    \ecaption{Problems on debugging a mobile agent system.} %苦肉の策
+  \end{center}
+\end{figure*}

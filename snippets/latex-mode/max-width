@@ -1,0 +1,8 @@
+# name: max-width
+# key: maxw
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+width=\textwidth

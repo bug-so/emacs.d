@@ -1,0 +1,8 @@
+# name: config separate between figure and sentence in h
+# key: sep-fig-sentence-h
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+\setlength\intextsep{${1:1}pt}$0

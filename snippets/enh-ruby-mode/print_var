@@ -1,0 +1,8 @@
+# name: print_var
+# key: var
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+#{$1}$0

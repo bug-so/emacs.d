@@ -1,0 +1,8 @@
+# name: cite
+# key: cite
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+`(check-back-slash-for-latex)`cite{$1}$0

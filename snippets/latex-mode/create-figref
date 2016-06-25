@@ -1,0 +1,9 @@
+# name : create-figref
+# key : create-figref
+# keybinding : keybinding
+# expand-env : ()
+# contributor : 
+# expand-env : ()
+# --
+\\newcommand\\figref[1]{図~\\ref{#1}}
+\\newcommand\\tabref[1]{表~\\ref{#1}}

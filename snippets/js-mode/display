@@ -1,0 +1,9 @@
+# name : display
+# key : trigger-key
+# keybinding : display
+# expand-env : ()
+# contributor : 
+# expand-env : ()
+# key: vars
+# --
+display.echoStatusBar($1, 1000);$0

@@ -1,0 +1,10 @@
+# name: main
+# key: main
+# keybinding: keybinding
+# expand-env: ()
+# contributor:
+# expand-env: ()
+# --
+public static void main(String[] args){
+    $0
+}

@@ -1,0 +1,14 @@
+# name: figure
+# key: figure
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+`(check-back-slash-for-latex)`begin{figure}[tb]
+  \begin{center}
+    \includegraphics[width=${1:.5}\textwidth]{figures/${2:sample}.eps}
+    \caption{$3}
+    \label{figures/$2}
+  \end{center}
+\end{figure}

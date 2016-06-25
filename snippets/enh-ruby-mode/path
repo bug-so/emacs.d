@@ -1,0 +1,8 @@
+# name: path
+# key: current-path
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+$:.unshift File.dirname(__FILE__)

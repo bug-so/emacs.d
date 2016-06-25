@@ -1,0 +1,8 @@
+# name: backslash for latex
+# key: backslash
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+\`(check-back-slash-for-latex)\`$0

@@ -1,0 +1,10 @@
+# name: loop
+# key: loop
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+loop{
+	$0
+}

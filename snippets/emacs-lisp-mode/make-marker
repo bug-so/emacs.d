@@ -1,0 +1,9 @@
+# name: make-marker
+# key: make-marker
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+(setq m (set-marker (make-marker) ${1:index}))
+(set-marker m nil)

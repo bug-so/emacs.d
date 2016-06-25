@@ -1,0 +1,8 @@
+# name: split
+# key: split
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+split($1)$0

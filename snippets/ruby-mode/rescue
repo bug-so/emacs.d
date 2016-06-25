@@ -1,0 +1,12 @@
+# name: rescue
+# key: rescue
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+begin
+$0
+rescue
+ensure
+end

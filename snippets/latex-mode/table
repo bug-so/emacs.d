@@ -1,0 +1,23 @@
+# name: table
+# key: table
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+\begin{table}[tb]
+  \begin{center}
+    \caption{$1}
+    \begin{tabular}{c|c}
+      \hline\hline
+       &  \\\\
+      \hline
+       & \\\\
+       & \\\\
+       & \\\\
+       \hline
+    \end{tabular}
+    \label{table-$2}
+  \end{center}
+\end{table}
+$0

@@ -1,0 +1,12 @@
+# name: set table hight
+# key: table-hight
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+\begingroup
+\renewcommand{\arraystretch}{1.2}
+\begin{tabular}{ccc} \hline
+\end{tabular}
+\endgroup

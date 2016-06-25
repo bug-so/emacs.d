@@ -1,0 +1,44 @@
+# name: Rakefile
+# key: Rakefile
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+require 'rake'
+require 'rake/clean'
+
+if File.exist?("texfonts.map")
+  DVI2PDF = 'dvipdfmx -f texfonts.map'
+else
+  DVI2PDF = 'dvipdfmx'
+end
+TEX2DVI = 'platex -kanji=utf8 -src-specials'
+BIBTEX = ['pbibtex -kanji=utf8', 'jbibtex -kanji=utf8']
+PAPER = '$0'
+
+cleans = []
+cleans << %w| aux log dvi bbl blg lof lot toc pbm out|.map{ |e| '*.' << e }
+cleans << ["tex/*.aux"]
+CLEAN.include(cleans)
+CLOBBER.include("#{PAPER}.pdf")
+
+desc "Build #{PAPER}.pdf"
+task :default => "#{PAPER}.pdf"
+
+task :dvi => "#{PAPER}.dvi"
+
+rule('.pdf' => '.dvi'){|t|
+  sh("#{DVI2PDF} #{t.source}")
+}
+
+rule('.dvi' => '.tex'){|t|
+  sh("#{TEX2DVI} #{t.source}")
+  sh("#{BIBTEX[0]} #{ File.basename(t.source, '.*')}"){ |ok, status|
+    unless ok
+      sh("#{BIBTEX[1]} #{ File.basename(t.source, '.*')}"){ |ok, status| }
+    end
+  }
+  sh("#{TEX2DVI} #{t.source}")
+  sh("#{TEX2DVI} #{t.source}")
+}

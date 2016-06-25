@@ -1,0 +1,8 @@
+# name: verb
+# key: verb
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+`(check-back-slash-for-latex)`verb|$1|$0

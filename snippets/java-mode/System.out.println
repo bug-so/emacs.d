@@ -1,0 +1,8 @@
+# name: System.out.println
+# key: syso
+# keybinding: keybinding
+# expand-env: ()
+# contributor: 
+# expand-env: ()
+# --
+System.out.println($1);$0
