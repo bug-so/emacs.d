@@ -169,3 +169,5 @@
 ;; フォント
 (custom-set-faces
  '(default ((t (:family "Ubuntu Mono" :foundry "unknown" :slant normal :weight normal :height 120 :width normal)))))
+
+(load-theme 'misterioso)
