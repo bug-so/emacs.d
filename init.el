@@ -69,6 +69,10 @@
  '(yas-trigger-key "TAB"))
 (add-to-list 'el-get-recipe-path "~/.emacs.d/el-get/my-recipe")
 
+;; lock the version of el-get packages
+(el-get-bundle tarao/el-get-lock)
+(el-get-lock)
+
 ;; 同期
 (el-get 'sync)
 
