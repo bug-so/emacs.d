@@ -1,12 +1,6 @@
 ;; GCのタイミングを決めるメモリを128Mに
 (setq gc-cons-threshold 134217728)
 
-;; setting load-path
-(setq load-path
-      (append (list (expand-file-name "~/.emacs.d")
-                    )
-              load-path))
-
 ;; el-getのディレクトリをpathに追加
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
 (add-to-list 'load-path "~/.emacs.d/elpa")
