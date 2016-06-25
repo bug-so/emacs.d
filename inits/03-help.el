@@ -1,6 +1,7 @@
 ;; キーバインドのガイド
 ;; 共通設定
 
+(el-get 'sync 'guide-key)
 (use-package guide-key
   :commands (guide-key/add-local-guide-key-sequence)
   :config

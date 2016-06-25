@@ -171,7 +171,7 @@
   (volatile-highlights-mode t)
   )
 
-
+(el-get 'sync 'migemo)
 (use-package migemo
   :if (executable-find "cmigemo")
   ;; :commands (isearch-forward migemo-isearch-toggle-migemo helm-migemize-command)
@@ -236,8 +236,9 @@
 (use-package git-gutter+
   :commands (toggle-git-gutter+)
   :config
-  (el-get 'sync 'git-gutter-fringe+))
-(use-package git-gutter-fringe+)
+  (el-get 'sync 'git-gutter-fringe+)
+  (use-package git-gutter-fringe+)
+  )
 
 (defun toggle-git-gutter+ ()
   "toggle git-gutter+-mode"
@@ -302,6 +303,7 @@
 ;; (add-to-list 'projectile-project-root-files-bottom-up "init.el")
 
 ;; google翻訳に突っ込む。英語→日本語以外はほとんど使わないので、固定
+(el-get 'sync 'google-translate)
 (use-package google-translate
   :commands (google-translate-at-point)
   :config
@@ -343,6 +345,7 @@
 ;;         direx:closed-icon "▸ ")
 ;;   )
 
+(el-get 'sync 'google-this)
 (use-package google-this
   ;; (defun google-this-url () "URL for google searches."
   ;;   (concat google-this-base-url google-this-location-suffix

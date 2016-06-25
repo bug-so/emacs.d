@@ -25,6 +25,7 @@
 (define-key global-map [remap scroll-down-command] 'sfp-page-up)
 
 ;; 一時的に無効化中
+(el-get 'sync 'sublimity)
 (use-package sublimity
   :config
   (setq sublimity-auto-hscroll-mode nil)
