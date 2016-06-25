@@ -28,6 +28,7 @@
   ;; (add-hook 'projectile-mode-hook (lambda () (guide-key/add-local-guide-key-sequence "C-c r")))
   )
 
+(el-get 'sync 'enh-ruby-mode)
 (use-package enh-ruby-mode
   :mode (("\\.rb$" . enh-ruby-mode)
          ("Capfile#" . enh-ruby-mode)

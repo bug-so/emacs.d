@@ -66,14 +66,15 @@
 ;; lock the version of el-get packages
 (el-get-bundle tarao/el-get-lock)
 (el-get-lock)
-
 ;; 同期
 (el-get 'sync)
 
+(el-get 'sync 'use-package)
 (require 'use-package)
 (require 'bind-key)
 
 ;; init-loaderを使って設定ファイルを分割
+(el-get 'sync 'init-loader)
 (require 'init-loader)
 (init-loader-load "~/.emacs.d/inits")
 

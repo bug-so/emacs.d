@@ -1,3 +1,4 @@
+(el-get 'sync 'ag)
 (use-package ag
   :commands (ag)
   :config
