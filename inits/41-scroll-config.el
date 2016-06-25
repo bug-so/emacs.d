@@ -30,6 +30,7 @@
   (setq sublimity-auto-hscroll-mode nil)
   (sublimity-mode t)
   (use-package sublimity-scroll
+    :config
     (setq sublimity-scroll-weight 3)
     (setq sublimity-scroll-drift-length 5)
     )
