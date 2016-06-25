@@ -3,15 +3,16 @@
          ("\\.jsm$" . js2-mode)
          )
   :config
+  (use-package flymake-jshint
+    :config
+    (add-hook 'js2-mode-hook
+              (lambda ()
+                (flymake-jshint-init)
+                (flymake-mode t)))
+    )
   (use-package js2-refactor
     :config
     (js2r-add-keybindings-with-prefix "C-c C-m")
-    )
-  (use-package flymake-jshint
-    (add-hook 'js2-mode-hook
-              '(lambda ()
-                 (flymake-jshint-init)
-                 (flymake-mode t)))
     )
   )
 

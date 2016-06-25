@@ -1,4 +1,5 @@
 (use-package python
+  :config
   (use-package epc)
   (use-package auto-complete-config)
   (use-package jedi
