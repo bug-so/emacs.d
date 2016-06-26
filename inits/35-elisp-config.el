@@ -6,11 +6,12 @@
   (add-hook 'emacs-lisp-mode-hook 'turn-on-eldoc-mode)
   (add-hook 'lisp-interaction-mode-hook 'turn-on-eldoc-mode)
   (add-hook 'ielm-mode-hook 'turn-on-eldoc-mode)
+  (el-get 'sync 'eldoc-extension)
+  (use-package eldoc-extension)
   )
-(use-package eldoc-extension)
 
 ;; (use-package elisp-format)
-
+(el-get 'sync 'elisp-slime-nav)
 (use-package elisp-slime-nav
   :config
   (define-key elisp-slime-nav-mode-map (kbd "C-.") 'elisp-slime-nav-find-elisp-thing-at-point)
