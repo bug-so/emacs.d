@@ -38,6 +38,7 @@
   )
 
 ;; トークンごとの選択
+(setq ad-redefinition-action 'accept)   ;警告出るので追加
 (el-get 'sync 'expand-region)
 (use-package expand-region
   :commands (er/expand-region)
