@@ -10,6 +10,7 @@
   (add-to-list 'ag-arguments "-u")
   )
 
+(el-get 'sync 'wgrep)
 (use-package wgrep-ag
   :commands (wgrep-ag-setup)
   )
