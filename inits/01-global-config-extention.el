@@ -230,20 +230,12 @@
 
 (el-get 'sync 'git-gutter+)
 (use-package git-gutter+
-  :commands (toggle-git-gutter+)
+  ;; :commands (toggle-git-gutter+)
   :config
   (el-get 'sync 'git-gutter-fringe+)
   (use-package git-gutter-fringe+)
+  (global-git-gutter+-mode 1)
   )
-
-(defun toggle-git-gutter+ ()
-  "toggle git-gutter+-mode"
-  (interactive)
-  (when (and (use-package magit nil t) (use-package git-gutter+))
-    (if (magit-get-top-dir)
-        (if git-gutter+-mode
-            (git-gutter+-mode -1)
-          (git-gutter+-mode 1)))))
 
 ;; 最後の編集地点へ戻る
 (el-get 'sync 'goto-last-change)
