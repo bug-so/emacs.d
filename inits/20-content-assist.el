@@ -101,9 +101,12 @@
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;
 (el-get 'sync 'helm)
 (use-package helm
-  :commands (helm helm-mini helm-M-x)
+  ;; :commands (helm helm-mini helm-M-x)
   :config
-  (use-package helm-config)
+  (use-package helm-config
+    :config
+    (bind-key (kbd "C-x C-f") 'find-file global-map)
+    )
   (el-get 'sync 'helm-descbinds)
   (use-package helm-descbinds
     :config
@@ -137,6 +140,13 @@
     (yas-global-mode 1)
     ;; (yas-load-directory "<path>/<to>/snippets/")
     )
+  (el-get 'sync 'helm-swoop)
+  (use-package helm-swoop
+    :commands (helm-swoop)
+    )
+  (use-package helm-migemo
+    :commands (helm-migemo helm-migemize-command)
+    )
   )
 (el-get 'sync 'ac-helm)
 (use-package ac-helm
@@ -158,20 +168,10 @@
           (nth n choices))
       (signal 'quit "user quit!"))))
 
-(el-get 'sync 'helm-swoop)
-(use-package helm-swoop
-  :commands (helm-swoop)
-  )
-(use-package helm-migemo
-  :commands (helm-migemo helm-migemize-command)
-  )
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; config for helm end ;;
 ;;;;;;;;;;;;;;;;;;;;;;;;;
-
-
-
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ;; config for auto-complete end ;;

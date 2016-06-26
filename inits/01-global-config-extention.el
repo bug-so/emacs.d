@@ -38,6 +38,7 @@
   )
 
 ;; トークンごとの選択
+(setq ad-redefinition-action 'accept)   ;警告出るので追加
 (el-get 'sync 'expand-region)
 (use-package expand-region
   :commands (er/expand-region)
@@ -102,19 +103,15 @@
   (global-fuzzy-format-mode t)
   )
 
-;; (use-package dired+
-
-;;   )
-
 (use-package dired-x
   :bind (("C-x C-j" . dired-jump-other-window)
          ("C-x j" . dired-jump)
          )
   :commands (dired-jump-other-window)
   :config
-  ;; (bind-keys :map global-map
-  ;;            ("C-x C-j" . dired-jump-other-window)
-  ;;            )
+  (bind-keys :map global-map
+             ("C-x C-j" . dired-jump-other-window)
+             )
   )
 
 ;; ;; 置換
@@ -234,20 +231,12 @@
 
 (el-get 'sync 'git-gutter+)
 (use-package git-gutter+
-  :commands (toggle-git-gutter+)
+  ;; :commands (toggle-git-gutter+)
   :config
   (el-get 'sync 'git-gutter-fringe+)
   (use-package git-gutter-fringe+)
+  (global-git-gutter+-mode 1)
   )
-
-(defun toggle-git-gutter+ ()
-  "toggle git-gutter+-mode"
-  (interactive)
-  (when (and (use-package magit nil t) (use-package git-gutter+))
-    (if (magit-get-top-dir)
-        (if git-gutter+-mode
-            (git-gutter+-mode -1)
-          (git-gutter+-mode 1)))))
 
 ;; 最後の編集地点へ戻る
 (el-get 'sync 'goto-last-change)
