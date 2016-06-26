@@ -102,19 +102,15 @@
   (global-fuzzy-format-mode t)
   )
 
-;; (use-package dired+
-
-;;   )
-
 (use-package dired-x
   :bind (("C-x C-j" . dired-jump-other-window)
          ("C-x j" . dired-jump)
          )
   :commands (dired-jump-other-window)
   :config
-  ;; (bind-keys :map global-map
-  ;;            ("C-x C-j" . dired-jump-other-window)
-  ;;            )
+  (bind-keys :map global-map
+             ("C-x C-j" . dired-jump-other-window)
+             )
   )
 
 ;; ;; 置換
