@@ -9,7 +9,6 @@
   (push '("*YASnippet tables*" :height 0.4 :stick t) popwin:special-display-config)
   (push '("*RE-Builder*" :height 0.4 :stick t) popwin:special-display-config)
   (push '("*translated*" :height 0.4 :stick t) popwin:special-display-config)
-  ;; (push '("*Moccur*" :height 0.4 :stick t) popwin:special-display-config)
   (push '("[*]git-gutter.*" :regexp t :height 0.4 :stick t) popwin:special-display-config)
   (push '("[*]Man.*" :regexp t :height 0.4 :stick t) popwin:special-display-config)
   (push '("[*]ag.*" :regexp t :height 0.4 :stick t :dedicated t) popwin:special-display-config)
@@ -18,7 +17,6 @@
   (push '("*esup*" :height 0.4 :stick t) popwin:special-display-config)
   (push '(snippet-mode :height 0.4 :stick t) popwin:special-display-config)
   (push '(dired-mode :position top :height 0.6) popwin:special-display-config)
-  ;; (push '(direx:direx-mode :position top) popwin:special-display-config)
   (push '(direx:direx-mode :position left :width 25) popwin:special-display-config)
   )
 
@@ -114,52 +112,11 @@
              )
   )
 
-;; ;; 置換
-;; (use-package color-moccur
-;;   :config
-;;   (setq moccur-split-word t)
-;;   )
-;; ;; grepの結果を編集
-;; (use-package moccur-edit)
-
-;; (use-package highlight-symbol
-;;   (setq highlight-symbol-colors '("DarkOrange" "DodgerBlue1" "DeepPink1"))
-;;   (setq highlight-symbol-timer 1)
-;;   )
-
-
 (use-package auto-highlight-symbol
   :commands (auto-highlight-symbol-mode)
   :config
   ;; (global-auto-highlight-symbol-mode t)
   )
-
-
-;; ;; プロジェクトツリーのようなもの
-;; (use-package sr-speedbar nil t)
-;; (setq sr-speedbar-width-x 40)
-;; (setq sr-speedbar-width-console 24)
-;; (setq sr-speedbar-delete-windows nil)
-;; (define-key global-map (kbd "C-^") 'sr-speedbar-toggle)
-;; (define-key speedbar-mode-map (kbd "TAB") 'speedbar-toggle-line-expansion)
-;; ;; デフォルトでは前回の動作が残るので，カレントディレクトリに合わせて自動的にキャッシュをクリア
-;; (setq sr-speedbar-auto-refresh t)
-;; (setq speedbar-use-images nil)
-;; (setq speedbar-frame-parameters '((minibuffer)
-;;                                   (width . 30)
-;;                                   (border-width . 0)
-;;                                   (menu-bar-lines . 0)
-;;                                   (tool-bar-lines . 0)
-;;                                   (unsplittable . t)
-;;                                   (left-fringe . 0)))
-;; (setq speedbar-default-position 'left-right)
-;; (setq speedbar-hide-button-brackets-flag t)
-;; (setq sr-speedbar-right-side nil)
-;; (setq speedbar-show-unknown-files t)
-
-;; gistクライアント
-;; (use-package yagist)
-;; (setq yagist-github-token '310e788cbe7e4fcc12380d37ae2cb21d04930b67)
 
 ;; undo yankなどをハイライト
 (el-get 'sync 'volatile-highlights)
@@ -182,18 +139,10 @@
   (setq migemo-isearch-min-length 1)
   (migemo-init)
   (migemo-isearch-toggle-migemo)        ; 必要なときにあれば良いから最初はオフ
-  ;; (add-hook 'minibuffer-setup-hook 'ibus-disable)
-  ;; (add-hook 'isearch-mode-hook 'ibus-disable)
   (add-hook 'minibuffer-setup-hook 'my-active)
   (add-hook 'isearch-mode-hook 'my-deactive)
 
   (setq migemo-isearch-min-length 2)
-  ;; (defun toggle-migemo-isearch-length ()
-  ;;   (interactive)
-  ;;   (if (> 1 migemo-isearch-min-length)
-  ;;       (setq migemo-isearch-min-length 1)
-  ;;     (setq migemo-isearch-min-length 2))
-  ;;   )
   )
 
 
@@ -288,8 +237,6 @@
   (projectile-global-mode)
   (add-to-list 'projectile-project-root-files-bottom-up "init.el")
   )
-;; (use-package projectile)
-;; (add-to-list 'projectile-project-root-files-bottom-up "init.el")
 
 ;; google翻訳に突っ込む。英語→日本語以外はほとんど使わないので、固定
 (el-get 'sync 'google-translate)
@@ -322,17 +269,6 @@
   :config
   ;; (setq compilation-window-height 15)
   )
-
-;; (use-package direx
-;;   :commands (direx:jump-to-directory-other-window direx:find-directory)
-;;   :bind (("C-x C-j" . direx:jump-to-directory-other-window)
-;;          ("C-x j" . direx:find-directory)
-;;          )
-;;   :config
-;;   (setq direx:leaf-icon "  "
-;;         direx:open-icon "▾ "
-;;         direx:closed-icon "▸ ")
-;;   )
 
 (el-get 'sync 'google-this)
 (use-package google-this

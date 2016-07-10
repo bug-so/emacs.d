@@ -1,13 +1,3 @@
-;; (use-package enh-ruby-mode
-;;   :interpreter (("ruby"    . enh-ruby-mode)
-;;                 ("rbx"     . enh-ruby-mode)
-;;                 ("jruby"   . enh-ruby-mode)
-;;                 ("ruby1.9" . enh-ruby-mode)
-;;                 ("ruby1.8" . enh-ruby-mode))
-;;   :config
-;;   ;; enh-ruby-modeの設定
-;;   )
-
 ;; rubyの環境設定ruby
 ;; enh-ruby-mode
 
@@ -25,7 +15,6 @@
   :commands (projectile-rails-on)
   :init
   (add-hook 'projectile-mode-hook 'projectile-rails-on)
-  ;; (add-hook 'projectile-mode-hook (lambda () (guide-key/add-local-guide-key-sequence "C-c r")))
   )
 
 (el-get 'sync 'enh-ruby-mode)
@@ -146,20 +135,7 @@
             ;; (robe-mode-setup)
 
             (local-set-key [f1] 'yari-helm)
-            ;; (rinari-launch)
-            ;; (yard-mode)
-            ;; (eldoc-mode)
             ))
-
-;; ;; rsense-setup
-;; (add-hook 'enh-ruby-mode-hook
-;;           '(lambda ()
-;;              (setq rsense-home (expand-file-name "~/.emacs.d/el-get/rsense-0.3"))
-;;              (add-to-list 'load-path (concat rsense-home "/etc"))
-;;              (use-package rsense)
-;;              (add-to-list 'ac-sources 'ac-source-rsense-method)
-;;              (add-to-list 'ac-sources 'ac-source-rsense-constant)
-;;              ))
 
 (defadvice ruby-indent-line (after unindent-closing-paren activate)
   (let ((column (current-column))
