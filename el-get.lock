@@ -1,5 +1,6 @@
 (setq el-get-lock-package-versions
-      '((elisp-slime-nav :checksum "0e96d9f1f0d334f09414b509d44d5c000b51f432")
+      '((el-get-lock :checksum "df8cfe55441695865a64b97946750b6413a40425")
+        (elisp-slime-nav :checksum "0e96d9f1f0d334f09414b509d44d5c000b51f432")
         (groovy-emacs-mode :checksum "9d42f284b3163215484e16bef1785456d2e7b68d")
         (sublimity :checksum "ee9c9fbb92b8fc0c191e5e8640477e251b602bf9")
         (js2-refactor :checksum "987ed3be5f78d412fb73906cc0d077ddfc15f02d")
@@ -9,7 +10,7 @@
         (ag :checksum "29d40fdaa4f605e9a6bf689050f0767f3ba22307")
         (s :checksum "2184337a132944f669144d0078d1fa1220012840")
         (migemo :checksum "c2240afa9afc0f003bb1d846710505e8e8e38169")
-        (el-get :checksum "091b15bf50ba2f2c00f09a2239852bf76ac7b983")
+        (el-get :checksum "c09cb391dfc9994bb5b41ce3f56f8f5bc045e99f")
         (google-this :checksum "22cff810e7ed3b3c9dae066588508864c25c6d99")
         (magit :checksum "1b7e0605e401df1be0215b8a5a16ac94e2aca9a7")
         (1040tt :checksum "194389d2630dc30b31de0ef8adde44cc3bdee455")
