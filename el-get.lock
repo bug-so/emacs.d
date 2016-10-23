@@ -41,7 +41,7 @@
         (popup :checksum "441ee40515038de3680768930157fce667ba872a")
         (fuzzy :checksum "534d723ad2e06322ff8d9bd0ba4863d243f698e7")
         (undo-tree :checksum "a3e81b682053a81e082139300ef0a913a7a610a2")
-        (iedit :checksum "5573c57eb7ea509326594b1cd04434fed32354f9")
+        (iedit :checksum "39919478f9472ce7a808ca601f4c19261ecc2f99")
         (anzu :checksum "324c3e2db48a3036cce95988e656a99154821c2d")
         (goto-last-change :checksum "ebb6695674be403d373fc19456dae60d6ba1de33")
         (git-gutter+ :checksum "b7726997806d9a2da9fe84ff00ecf21d62b6f975")
