@@ -1,5 +1,6 @@
 (setq el-get-lock-package-versions
-      '((el-get-lock :checksum "df8cfe55441695865a64b97946750b6413a40425")
+      '((yaml-mode :checksum "b03fba2be23ef928cc6e8752c87bf5f0e3dd422a")
+        (el-get-lock :checksum "df8cfe55441695865a64b97946750b6413a40425")
         (elisp-slime-nav :checksum "0e96d9f1f0d334f09414b509d44d5c000b51f432")
         (groovy-emacs-mode :checksum "9d42f284b3163215484e16bef1785456d2e7b68d")
         (sublimity :checksum "ee9c9fbb92b8fc0c191e5e8640477e251b602bf9")
