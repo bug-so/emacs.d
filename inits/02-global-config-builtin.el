@@ -70,9 +70,6 @@
 ;; rktをscheme-modeとして開く
 (add-to-list 'auto-mode-alist '("\\.rkt$" . scheme-mode))
 
-;; C-x C-f を便利に
-(ffap-bindings)
-
 (use-package cl
   :config
   ;; 問い合わせを簡略化 yes/no を y/n

@@ -105,7 +105,6 @@
   :config
   (use-package helm-config
     :config
-    (bind-key (kbd "C-x C-f") 'find-file global-map)
     )
   (el-get 'sync 'helm-descbinds)
   (use-package helm-descbinds
@@ -147,6 +146,12 @@
   (use-package helm-migemo
     :commands (helm-migemo helm-migemize-command)
     )
+  ;; ffapとhelmの競合修正
+  ;; el-get syncでhelm-modeにされてしまうのでhelmの設定の最後に行う
+  ;; C-x C-f を便利に
+  (ffap-bindings)
+  ;; (bind-key (kbd "C-x C-f") 'find-file global-map)
+  (helm-mode -1)
   )
 (el-get 'sync 'ac-helm)
 (use-package ac-helm
