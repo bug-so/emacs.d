@@ -13,10 +13,15 @@
         mozc-handle-event
         my-backward-indent
         phi-search
+        wdired-next-line
+        wdired-previous-line
         yas-expand
         ))
 
 (setq mc/cmds-to-run-once
       '(
+        dired-toggle-read-only
+        handle-switch-frame
+        make-frame
         my-mc/mark-next-and-cycle-forward
         ))
