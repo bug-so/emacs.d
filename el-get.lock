@@ -13,7 +13,7 @@
         (ag :checksum "29d40fdaa4f605e9a6bf689050f0767f3ba22307")
         (s :checksum "2184337a132944f669144d0078d1fa1220012840")
         (migemo :checksum "c2240afa9afc0f003bb1d846710505e8e8e38169")
-        (el-get :checksum "44f72a651630335115633466ced5320a3fc777df")
+        (el-get :checksum "4a76c7e99edf7b3660fb8360261db1eba953958b")
         (google-this :checksum "22cff810e7ed3b3c9dae066588508864c25c6d99")
         (magit :checksum "1b7e0605e401df1be0215b8a5a16ac94e2aca9a7")
         (1040tt :checksum "194389d2630dc30b31de0ef8adde44cc3bdee455")
