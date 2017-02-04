@@ -18,6 +18,7 @@
   (push '(snippet-mode :height 0.4 :stick t) popwin:special-display-config)
   (push '(dired-mode :position top :height 0.6) popwin:special-display-config)
   (push '(direx:direx-mode :position left :width 25) popwin:special-display-config)
+  (push '("[*]sbt.*" :regexp t :height 0.3 :noselect t :stick t) popwin:special-display-config)
   )
 
 ;; 複数の矩形を選択
