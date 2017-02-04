@@ -1,6 +1,8 @@
 (setq el-get-lock-package-versions
       '((scala-mode :checksum "9b8db623b13fcb0aad9271d1fae73e1257dda13c")
         (sbt-mode :checksum "6caabd4e68fb878e743a29d16356a2c2c3bd7637")
+        (rcodetools :checksum "dc5023df199f1e1fce8522f2480b80cae539fea7")
+        (ruby-block :checksum "289c34dca6daa1a1591537e1c56b687c14631930")
         (ansible-doc :checksum "bc8128a85a79b14f4a121105d87a5eddc33975ad")
         (vagrant-tramp :checksum "453ba605b28d2964bb4e10074f1e6891ebb4d2d6")
         (yaml-mode :checksum "b03fba2be23ef928cc6e8752c87bf5f0e3dd422a")
