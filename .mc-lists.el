@@ -6,8 +6,10 @@
         c-electric-delete-forward
         c-electric-paren
         c-electric-semi&comma
+        dired-do-rename
         isearch-abort
         isearch-printing-char
+        kill-region
         magit-revert-item
         mark-sexp
         mozc-handle-event
@@ -15,6 +17,7 @@
         phi-search
         wdired-next-line
         wdired-previous-line
+        yaml-electric-dash-and-dot
         yas-expand
         ))
 
@@ -24,4 +27,5 @@
         handle-switch-frame
         make-frame
         my-mc/mark-next-and-cycle-forward
+        wdired-finish-edit
         ))
