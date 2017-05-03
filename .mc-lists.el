@@ -24,6 +24,7 @@
 (setq mc/cmds-to-run-once
       '(
         dired-toggle-read-only
+        git-rebase-squash
         handle-switch-frame
         make-frame
         my-mc/mark-next-and-cycle-forward
